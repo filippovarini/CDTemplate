@@ -1,0 +1,23 @@
+{
+  "name": "cdtemplate",
+  "version": "1.0.0",
+  "description": "CD template for dockerized  NodeJs applicatinos using Heroku as Deployment platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filippovarini/CDTemplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filippovarini/CDTemplate/issues"
+  },
+  "homepage": "https://github.com/filippovarini/CDTemplate#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
