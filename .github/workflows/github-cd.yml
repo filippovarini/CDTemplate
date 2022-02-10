@@ -16,6 +16,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       #Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: output secrets
+        run: |
+          echo $DOCKER_ID
+          echo $DOCKER_SECRET
+      
       - name: checkout-repo
         uses: actions/checkout@v2
 
