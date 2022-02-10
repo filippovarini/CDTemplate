@@ -20,6 +20,7 @@ jobs:
         run: |
           echo $DOCKER_ID
           echo $DOCKER_SECRET
+          echo ${{ secrets.DOCKER_ID }}
       
       - name: checkout-repo
         uses: actions/checkout@v2
