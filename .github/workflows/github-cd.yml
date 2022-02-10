@@ -17,21 +17,20 @@ jobs:
           node-version: 17.x
 
       - name: install dependencies      
-        run: npm install
-        run: npm ci
+        run: |
+          npm install
+          npm ci
 
   build:
     runs-on: ubuntu-latest
     needs: setup
     steps:
-      - run: echo "building..."
       - run: npm run build
 
   test:
     runs-on: ubuntu-latest
     needs: setup
     steps:
-      - run: echo "testing..."
       - run: npm run test
 
   # push_to_Docker_Hub:
