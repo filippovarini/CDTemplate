@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy package.json first so that doen't reinstall all dependencies every time
 COPY package.json /app
-COPY package-lock.json /app
+RUN npm install
 RUN npm ci --only=production && npm cache clean --force
 
 COPY . /app
@@ -12,5 +12,6 @@ COPY . /app
 # Add compilation 
 # Add testing
 
-CMD ["node", "server.js"]
 EXPOSE 5001
+
+CMD ["node", "server.js"]

@@ -1,0 +1,12 @@
+#!/bin/bash
+imageName=cdtemplate
+containerName=cdtemplate-container
+port=5001
+
+docker build -t $imageName -f Dockerfile  .
+
+echo Delete old container...
+docker rm -f $containerName
+
+echo Run new container...
+docker run --name $containerName -d -p $port:$port $imageName
