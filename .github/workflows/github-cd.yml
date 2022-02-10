@@ -42,6 +42,7 @@ jobs:
 
   docker-setup:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: checkout-repo
         uses: actions/checkout@v2
