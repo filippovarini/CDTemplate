@@ -12,13 +12,13 @@ jobs:
       # - uses: actions/checkout@v2
 
       - name: setup node
-      - uses: actions/setup-node@master
-      - with:
+        uses: actions/setup-node@master
+        with:
           node-version: 17.x
-          
+
       - name: install dependencies      
-      - run: npm install
-      - run: npm ci
+        run: npm install
+        run: npm ci
 
   build:
     runs-on: ubuntu-latest
