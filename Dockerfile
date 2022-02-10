@@ -12,6 +12,6 @@ COPY . /app
 # Add compilation 
 # Add testing
 
-EXPOSE 5001
+EXPOSE $port
 
 CMD ["node", "server.js"]
