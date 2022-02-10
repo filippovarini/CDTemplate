@@ -73,7 +73,7 @@ jobs:
   
   deploy:
     runs-on: ubuntu-latest
-    needs: docker-setup
+    needs: test
     steps:
       # Clone the repository
       - name: checkout-repo
