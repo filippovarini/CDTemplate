@@ -16,12 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       #Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: output secrets
-        run: |
-          echo $DOCKER_ID
-          echo $DOCKER_SECRET
-          echo ${{ secrets.DOCKER_ID }}
-      
       - name: checkout-repo
         uses: actions/checkout@v2
 
@@ -63,8 +57,8 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: $DOCKER_ID
-          password: $DOCKER_SECRET
+          username: ${{ secrets.DOCKER_ID }}
+          password: ${{ secrets.DOCKER_SECRET }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
