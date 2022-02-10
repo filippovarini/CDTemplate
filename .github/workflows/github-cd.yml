@@ -18,6 +18,8 @@ jobs:
 
       - name: install dependencies      
         run: |
+          cd ../
+          ls
           npm install
           npm ci
 
