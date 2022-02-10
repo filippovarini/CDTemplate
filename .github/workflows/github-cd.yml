@@ -11,9 +11,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v2
 
+      - name: setup node
       - uses: actions/setup-node@master
       - with:
           node-version: 17.x
+          
+      - name: install dependencies      
       - run: npm install
       - run: npm ci
 
