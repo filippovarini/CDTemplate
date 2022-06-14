@@ -20,7 +20,7 @@ you see `API Key`. Copy this key and go to your project's repository on GitHub.
 
 2. Add your herkou email to HEROKU_EMAIL secret
 
-2. In your Repo, add a new secret called HEROKU_API_KEY and paste the 
+3. In your Repo, add a new secret called `HEROKU_API_KEY` and paste the 
 copied API Key as the value.
 
 You are now authenticated and can push to Heroku!
