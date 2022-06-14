@@ -10,4 +10,4 @@ the container
 
 Also, the .yml file relies on GitHub secrets. To set them up, go to `Settings >
 Secrets > Add New Secret`
-[https://github.com/Azure/actions-workflow-samples/raw/master/assets/images/create-secret.png]
+![](https://github.com/Azure/actions-workflow-samples/raw/master/assets/images/create-secret.png)
