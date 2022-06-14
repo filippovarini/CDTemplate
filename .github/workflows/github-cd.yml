@@ -6,6 +6,7 @@ on:
 
 # Set env variables
 env:
+  HEROKU_EMAIL: ${{ secrets.EMAIL }}
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
   APP_NAME: ${{ 'github-docker-cd' }}
   DOCKER_SECRET: ${{ secrets.DOCKER_SECRET }}
@@ -60,5 +61,5 @@ jobs:
         with:
           heroku_api_key: $HEROKU_API_KEY
           heroku_app_name: $APP_NAME
-          heroku_email: "woorkippo@gmail.com"
+          heroku_email: $HEROKU_EMAIL
           usedocker: true
