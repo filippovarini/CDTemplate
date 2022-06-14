@@ -8,7 +8,7 @@ on:
 env:
   HEROKU_EMAIL: ${{ secrets.EMAIL }}
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-  APP_NAME: ${{ 'github-docker-cd' }}
+  APP_NAME: ${{ 'waterfall-skdfnodfnsdi' }}
   DOCKER_SECRET: ${{ secrets.DOCKER_SECRET }}
   DOCKER_ID: ${{ secrets.DOCKER_ID }}
     
