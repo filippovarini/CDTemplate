@@ -18,7 +18,7 @@ You need to authenticate the runner that wants to push to Heroku. To do so:
 1. Go to your `Heroku account > Account Settings`. Scroll to the bottom until 
 you see `API Key`. Copy this key and go to your project's repository on GitHub.
 
-2. In your Repo, add a new secret called HEROKU_API_KEY and paste the 
+2. In your Repo, add a new secret called `HEROKU_API_KEY` and paste the 
 copied API Key as the value.
 
 You are now authenticated and can push to Heroku!
